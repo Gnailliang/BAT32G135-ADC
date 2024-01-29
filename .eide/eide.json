@@ -1,0 +1,70 @@
+{
+  "name": "BAT32G135-ADC",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "myfile/adcBurnInTest",
+    "myfile/system",
+    "myfile/src",
+    "myfile/include"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": "BAT32G135GE32FP",
+  "packDir": ".pack/Cmsemicon/BAT32G135.0.2.1",
+  "miscInfo": {
+    "uid": "6f72065410226af4a7c3d1ab3bcb58b2"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M0+",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "ldscripts\\BAT32G135.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "Cmsemicon",
+          "cpuName": "BAT32G135GE"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "myfile/include/drivers",
+          "myfile/system/include/arm",
+          "myfile/system/include/cmsis",
+          "myfile/system/include/cortexm",
+          "myfile/system/include/DEVICE",
+          "myfile/system/include/diag",
+          "myfile/include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": []
+      }
+    }
+  },
+  "version": "3.3"
+}
